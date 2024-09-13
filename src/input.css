@@ -9,10 +9,10 @@
 
 @layer base{
     section{
-        @apply pt-12 pb-4 md:pt-20 ;
+        @apply pt-12 pb-4;
     }
     body {
-        @apply font-fontSuse bg-slate-200;
+        @apply font-fontSuse bg-slate-200 tracking-wider;
     }
 }
 
@@ -24,6 +24,6 @@
         @apply border-2 border-transparent rounded-md cursor-pointer ease-linear duration-200 hover:border-limeColor
     }
     .link-hover{
-        @apply border-b-4 border-transparent ease-linear duration-200 hover:border-yellowColor hover:text-brownColor
+        @apply border-b-4 text-yellowColor border-transparent ease-linear duration-200 hover:border-yellowColor hover:text-whiteColor
     }
 }
