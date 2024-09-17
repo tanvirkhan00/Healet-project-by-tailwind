@@ -7,24 +7,30 @@
 
   <!-- Title Website -->
   <title>Responsive || Healet Website</title>
+
+  <!-- Fav Icon -->
+   <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
 </head>
 <body>
  <section class="header_section pt-0 bg-cover h-[100vh]" style="background-image: url(/images/slider-bg.jpg);" id="home">
     <div class="container">
-        <header class="header flex items-center justify-between px-[50px] pt-[20px]">
+        <header class="header flex items-center justify-between relative px-[50px] pt-[20px]">
             <div class="heading">
                 <h1 class="text-yellowColor font-bold font-fontLobster text-4xl">HEALET</h1>
             </div>
-            <div class="list hidden md:block">
-                <ul class="flex items-center gap-5 text-whiteColor text-xl">
-                    <li><a href="#home" class="link-hover">HOME</a></li>
-                    <li><a href="#product" class="link-hover">PRODUCTS</a></li>
-                    <li><a href="#about" class="link-hover">ABOUT</a></li>
-                    <li><a href="#offer" class="link-hover">OFFERS</a></li>
-                    <li><a href="#blog" class="link-hover">BLOG</a></li>
+            <div class="hidden single-box absolute top-0 md:pt-3 left-0 w-[100%] border-b-2 sm:bg-black sm:text-whiteColor md:text-blackColor z-30 sm:h-[100vh] md:h-[50px] md:bg-transparent border-yellowColor py-14  md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto md:gap-5 md:text-lg md:font-semibold" id="nav-menu">
+                <ul class="flex items-center flex-col md:flex-row gap-5 text-whiteColor text-xl">
+                    <li><a href="#home" class="link-hover nav__link">HOME</a></li>
+                    <li><a href="#product" class="link-hover nav__link">PRODUCTS</a></li>
+                    <li><a href="#about" class="link-hover nav__link">ABOUT</a></li>
+                    <li><a href="#offer" class="link-hover nav__link">OFFERS</a></li>
+                    <li><a href="#blog" class="link-hover nav__link">BLOG</a></li>
                 </ul>
+                <div class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden" id="nav-close">
+                    <i class="fa-solid fa-xmark hover:text-secondaryColor"></i>
+                </div>
             </div>
-            <div class="menuBar-icon md:hidden">
+            <div class="menuBar-icon md:hidden" id="manuBar">
                 <i class="fa-solid fa-bars text-yellowColor cursor-pointer hover:text-redColor text-lg"></i>
             </div>
         </header>
@@ -191,7 +197,7 @@
 
  <section class="offer_section" id="offer">
     <div class="container flex flex-col md:flex-row gap-[10px] md:h-[500px]">
-        <div class="offer-left md:basis-[50%]  bg-cover bg-center content-hover" style="background-image: url(/images/o1.jpg);">
+        <div class="offer-left md:basis-[50%]  bg-cover bg-center content-hover duration-200 ease-linear overflow-hidden hover:scale-105" style="background-image: url(/images/o1.jpg);">
             <div class="content text-white p-[25px]">
                 <h1 class="text-4xl font-bold font-fontBebas">Upto 15% Off</h1>
                 <div class="button mt-2">
@@ -200,7 +206,7 @@
             </div>
         </div>
         <div class="offer-right md:basis-[50%] flex flex-col gap-[10px]" >
-            <div class="1st-offer md:h-[245px] bg-cover bg-center content-hover" style="background-image: url(/images/o2.jpg);">
+            <div class="1st-offer md:h-[245px] bg-cover bg-center content-hover duration-200 ease-linear overflow-hidden hover:scale-105" style="background-image: url(/images/o2.jpg);">
                 <div class="content text-white flex flex-col justify-end h-full items-end top-0 left-0 p-[25px]">
                     <h1 class="text-3xl font-bold font-fontBebas">Upto 10% Off</h1>
                     <div class="button mt-2">
@@ -208,7 +214,7 @@
                     </div>
                 </div>
             </div>
-            <div class="2nd-offer md:h-[245px] bg-cover bg-center content-hover" style="background-image: url(/images/o3.jpg);">
+            <div class="2nd-offer md:h-[245px] bg-cover bg-center content-hover duration-200 ease-linear overflow-hidden hover:scale-105" style="background-image: url(/images/o3.jpg);">
                 <div class="content text-white flex flex-col h-full justify-end p-[25px]">
                     <h1 class="text-3xl font-bold font-fontBebas">Upto 20% Off</h1>
                     <div class="button mt-2">
@@ -362,14 +368,23 @@
         </div>
     </div>
     <div class="copyright mt-2 text-center text-sm text-grayColor">
-        <p>© 2024 All Rights Reserved By Free Html Templates</p>
+        <p>© 2024 All Rights Reserved By Healet Project Template</p>
     </div>
  </section>
+
+ <!------------------ Scroll Up -------------->
+
+ <a href="" class="fixed right-4 bg-yellowColor shadow-sm inline-block px-4 py-2 rounded-full text-lg text-blackColor z-50 -bottom-1/2 hover:translate-y-1 ease-in duration-200" id="scroll-up">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
 
 
 
  <!-- fontAwsome Link -->
  <script src="https://kit.fontawesome.com/862c32b35b.js" crossorigin="anonymous"></script>
+
+ <!-- Script Js Link -->
+  <script src="main.js"></script>
 
 </body>
 </html>
